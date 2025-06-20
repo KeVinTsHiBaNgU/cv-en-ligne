@@ -1,656 +1,143 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
 
-            <!--=================== UNICONS ===================-->
-            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-            <!--=================== SWIPER CSS ===================-->
-            <link rel="styleshett" href="">
-
-            <!--=================== CSS ===================-->
-            <link rel="stylesheet" href="./css/styles.css">
-
-            <title>Curriculum Vitae en Ligne</title>
-        </head>
-        <body>
-            <!--=================== HEADER ===================-->
-            <header class="header" id="header">
-                <nav class="nav container">
-                    <a href="#" class="nav__logo">Kevin</a>
-
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list grid">
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link">
-                                    <i class="uil uil-estate nav__icon"></i> Accueil
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#about" class="nav__link">
-                                    <i class="uil uil-user nav__icon"></i> A propos
-                                </a>
-                            </li><li class="nav__item">
-                                <a href="#skills" class="nav__link">
-                                    <i class="uil uil-file-alt nav__icon"></i> Compétences
-                                </a>
-                            </li><li class="nav__item">
-                                <a href="#services" class="nav__link">
-                                    <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                                </a>
-                            </li><li class="nav__item">
-                                <a href="#portfolio" class="nav__link">
-                                    <i class="uil uil-scenery nav__icon"></i> Portfolio 
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">
-                                    <i class="uil uil-message nav__icon"></i> Contact 
-                                </a>
-                            </li>
-                        </ul>
-                        <i class="uil uil-times nav__close" id="nav-close"></i>
-                    </div>
-
-                    <div class="nav__btns">
-                        <!-- Theme change button -->
-                        <i class="uil uil-moon change-theme " id="theme-button"></i>
+    <!--=================== UNICONS ===================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
-                        <div class="nav__toggle" id="nav-toggle">
-                            <i class="uil uil-apps"></i>
-                        </div>
-                    </div>
-                </nav>
-            </header>
 
-            <!--=================== MAIN ===================-->
-        <main class="main">
-            <!--=================== HOME ===================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/kevin-tshibangu" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
+    <!--=================== SWIPER CSS ===================-->
+    <link rel="styleshett" href="">
 
-                            <a href="#" target="_blank" class="home__social-icon">
-                                <i class="uil uil-dribbble"></i>
-                            </a>
+    <!--=================== CSS ===================-->
+    <link rel="stylesheet" href="./css/styles.css">
 
-                            <a href="#" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
+    <title>Curriculum Vitae en Ligne</title>
+</head>
 
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-    
-                                    <image class="home__blob-img" x='12' y='18'  href="./img/profil.png"/>
-                                </g>
-                            </svg>
-                        </div>
+<body>
+    <!--=================== HEADER ===================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Kevin</a>
 
-                        <div class="home__data">
-                            <!-- <h1 class="home__title" id="typewriter"></h1> -->
-                             <h1 class="home__title">
-    <span id="multilang-typewriter"></span><span class="cursor">|</span>
-</h1>
-                            <h3 class="home__subtitle">Apprenti Data-Analyst</h3>
-                            <p class="home__description">High level experience in web design and knowledge, producing quality work.</p>
-                            <a href="#contact" class="button button--flex">
-                                Me contacter <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>À propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Compétences</a></li>
+                    <li class="nav__item"><a href="#softskills" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Soft-skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
 
-                    </div>
-
-                    <!-- Bouton pour défiler -->
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Défiler vers le bas</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
-            </section>
+            </div>
+        </nav>
+    </header>
 
-            <!--=================== ABOUT ===================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">A propos</h2>
-                <span class="section__subtitle">Introduction</span>
+    <!--=================== MAIN ===================-->
+    <main class="main" id="main-content">
+        <!--=================== HOME ===================-->
+        <div id="home-section"></div>
+        <div id="about-section"></div>
+        <div id="skills-section"></div>
+        <div id="qualifications-section"></div>
+        <div id="projets-section"></div>
+        <div id="qualities-section"></div>
+        <!-- <div id="services-section"></div> -->
+        <!-- <div id="contact-section"></div>  -->
 
-                <div class="about__container container grid">
-                    <img src="./img/propos.jpg" alt="" class="about__img">
+        <!--=================== ABOUT ===================-->
 
-                    <div class="about__data">
-                        <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita 
-                            beatae iure! Laudantium ratione ex debitis officiis nobis quae ut tenetur accusamus labore ipsum, vero 
-                            consequatur aperiam maxime! Impedit, ducimus?</p>
 
-                        <div class="about__info">
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Years <br> experience </span>
-                        </div>
+        <!--=================== SKILLS ===================-->
 
-                        <div class="about__info">
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> project </span>
-                        </div>
 
-                        <div class="about__info">
-                            <span class="about__info-title">08+</span>
-                            <span class="about__info-name">Companies <br> worked </span>
-                        </div>
 
-                        <div class="about__buttons">
-                            <a download="" href="./pdf/CV.pdf" class="button button--flex">
-                                Télécharger mon CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+        <!--=================== QUALIFICATION ===================-->
+
+
+        <!--=================== SOFTSKILLS ===================-->
+        
+
+        <!--=================== SERVICES ===================-->
+
+        <!--=================== CONTACT ME ===================-->
+
+    </main>
+
+    <!--=================== FOOTER ===================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <!-- Identité -->
+                <div>
+                    <h1 class="footer__title">Kevin Tshibangu</h1>
+                    <span class="footer__subtitle">Développeur Full Stack & Data Enthusiast</span>
                 </div>
-            </section>
 
-            <!--=================== SKILLS ===================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Compétences</h2>
-                <span class="section__subtitle">Mes compétences informatiques</span>
+                <!-- Liens rapides -->
+                <ul class="footer__links">
+                    <li><a href="#about" class="footer__link">À propos</a></li>
+                    <li><a href="#skills" class="footer__link">Compétences</a></li>
+                    <li><a href="#projects" class="footer__link">Projets</a></li>
+                    <li><a href="./pdf/CV.pdf" class="footer__link" download>Télécharger mon CV</a></li>
+                    <li><a href="mailto:kevintshib08@gmail.com" class="footer__link">Email</a></li>
+                </ul>
 
-                <div class="skills__container container grid">
-                        <!-- Développement Web -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Développement Web</h1>
-                                    <span class="skills__subtitle">Front-end & Back-end</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data"><h3 class="skills__name">JavaScript / TypeScript</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">HTML / CSS</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">PHP (CodeIgniter 3 & 4)</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Python / Flask</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Flutter / Dart</h3></div>
-                            </div>
-                        </div>
-
-                        <!-- Bases de données -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Bases de données</h1>
-                                    <span class="skills__subtitle">Conception & manipulation</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data"><h3 class="skills__name">MySQL / PostgreSQL</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">SQLite</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Talend / ETL</h3></div>
-                            </div>
-                        </div>
-
-                        <!-- DevOps & Infrastructure -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-cloud-computing skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">DevOps & Infrastructure</h1>
-                                    <span class="skills__subtitle">CI/CD & automatisation</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data"><h3 class="skills__name">Docker / Kubernetes</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Jenkins / Ansible / Terraform</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Linux / Windows</h3></div>
-                            </div>
-                        </div>
-
-                        <!-- Data Analyse & Visualisation -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-chart skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Analyse & Visualisation</h1>
-                                    <span class="skills__subtitle">Outils BI et analyse de données</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data"><h3 class="skills__name">Power BI / Grafana</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Python (Pandas, etc.)</h3></div>
-                                <div class="skills__data"><h3 class="skills__name">Méthodologies : Agile (Scrum, Kanban)</h3></div>
-                            </div>
-                        </div>
+                <!-- Réseaux sociaux -->
+                <div class="footer__socials">
+                    <a href="https://linkedin.com/in/kevin..." target="_blank" class="footer__social" title="LinkedIn">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/kevin..." target="_blank" class="footer__social" title="GitHub">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="mailto:kevintshib08@gmail.com" class="footer__social" title="Email">
+                        <i class="uil uil-envelope-alt"></i>
+                    </a>
                 </div>
-            </section>
-
-
-            <!--=================== QUALIFICATION ===================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My Personal journey</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button--flex" data-target="#work">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>
-
-                    </div>
-
-                    <div class="qualification__sections">
-                        <!--=================== QUALIFICATION CONTENT 1 ===================-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                            <!--=================== QUALIFICATION 1 ===================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Computer Enginner</h3>
-                                    <span class="qualification__subtitle">Peru - University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2009 - 2014
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!--=================== QUALIFICATION 2 ===================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Web Designer</h3>
-                                    <span class="qualification__subtitle">Spain - University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2014 - 2017
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--=================== QUALIFICATION 3 ===================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Web Development</h3>
-                                    <span class="qualification__subtitle">Peru - Institute</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017 - 2019
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!--=================== QUALIFICATION 4 ===================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Master in Ui/Ux</h3>
-                                    <span class="qualification__subtitle">Paris - Institute</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2019 - 2021
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!--=================== QUALIFICATION CONTENT 2 ===================-->
-                        <!--=================== QUALIFICATION CONTENT: EXPERIENCE PROFESSIONNELLE ===================-->
-<div class="qualification__content" data-content id="work">
-    <!-- Projet personnel : Sui'Candidat -->
-    <div class="qualification__data">
-        <div>
-            <h3 class="qualification__title">Créateur & Développeur — Sui'Candidat</h3>
-            <span class="qualification__subtitle">Projet personnel — (bientôt sur le Play Store)</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                Depuis mai 2025
             </div>
-            <ul>
-                <li>Conception et développement de l'application mobile Sui'Candidat</li>
-                <li>Développement des fonctionnalités : données locales, rappels, sécurité</li>
-                <li>Application des principes Agile pour le pilotage du projet</li>
-                <li>Mise en place des politiques de confidentialité</li>
-            </ul>
+
+            <p class="footer__copy">
+                © 2025 Kevin Tshibangu <br>
+                Réalisé avec ❤️ — inspiré de <a
+                    href="https://github.com/bedimcode/portfolio-responsive-complete/blob/main/preview.png"
+                    target="_blank">Bedimcode</a>
+            </p>
         </div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-    </div>
-
-    <!-- Support technique -->
-    <div class="qualification__data">
-        <div></div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-        <div>
-            <h3 class="qualification__title">Support technique & automatisation</h3>
-            <span class="qualification__subtitle">Projet personnel</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                Oct. 2023 – Sept. 2024
-            </div>
-            <ul>
-                <li>Correction de bugs, optimisation des performances</li>
-                <li>Automatisation via scripts Python (envoi mail, reporting, historisation)</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Apprenti full-stack -->
-    <div class="qualification__data">
-        <div>
-            <h3 class="qualification__title">Apprenti développeur full-stack</h3>
-            <span class="qualification__subtitle">Belive.ai (VusionGroup) — Amiens, FR</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                Janv. 2023 – Août 2023
-            </div>
-            <ul>
-                <li>Utilisation d’Agile pour la gestion des priorités</li>
-                <li>Création et optimisation de requêtes SQL</li>
-                <li>Développement : HTML, CSS, JavaScript, PHP</li>
-            </ul>
-        </div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-    </div>
-
-    <!-- Stage développeur web -->
-    <div class="qualification__data">
-        <div></div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-        <div>
-            <h3 class="qualification__title">Stagiaire développeur web</h3>
-            <span class="qualification__subtitle">Belive.ai — Amiens, FR</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                Avril 2022 – Août 2022
-            </div>
-            <ul>
-                <li>Migration OwnCloud vers NextCloud</li>
-                <li>Organisation de réunions avec les équipes</li>
-                <li>Choix d’outils collaboratifs pour la transition</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Stage chef de projet -->
-    <div class="qualification__data">
-        <div>
-            <h3 class="qualification__title">Stagiaire chef de projet</h3>
-            <span class="qualification__subtitle">CA de Beauvaisis — Beauvais, FR</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                Avril 2022 – Août 2022
-            </div>
-            <ul>
-                <li>Coordination de projets numériques</li>
-                <li>Suivi de projet et animation des réunions</li>
-            </ul>
-        </div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-        </div>
-    </div>
-
-    <!-- Autres expériences -->
-    <div class="qualification__data">
-        <div></div>
-        <div>
-            <span class="qualification__rounder"></span>
-            <!-- dernière étape -->
-        </div>
-        <div>
-            <h3 class="qualification__title">Expériences complémentaires</h3>
-            <span class="qualification__subtitle">Bénévolat & emplois saisonniers</span>
-            <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i>
-                2018 – 2021
-            </div>
-            <ul>
-                <li>Ouvrier bâtiment – Coretel (juin – août 2021)</li>
-                <li>Responsable chalets – Agglo Beauvais (juil. – août 2019)</li>
-                <li>Assistant entraîneur U13 – FC Saint-Just (avr. – juil. 2018)</li>
-                <li>Bénévolat – Emmaüs, Quartier Libre, etc.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!--=================== SOFTSKILLS ===================-->
-            <section class="qualities section" id="softskills">
-    <h2 class="section__title">Savoir-être, langues & centres d’intérêt</h2>
-    <span class="section__subtitle">Un peu plus sur moi</span>
-
-    <div class="qualities__container container grid">
-        <!-- SAVOIR-ÊTRE -->
-        <div class="qualities__block">
-            <h3 class="qualities__title"><i class="uil uil-user-check"></i> Savoir-être</h3>
-            <ul class="qualities__list">
-                <li>Esprit d’équipe</li>
-                <li>Gestion du stress</li>
-                <li>Ponctualité</li>
-                <li>Communication</li>
-                <li>Fiabilité</li>
-                <li>Rigueur</li>
-                <li>Sens du service</li>
-                <li>Autonomie</li>
-                <li>Curiosité</li>
-                <li>Adaptabilité</li>
-            </ul>
-        </div>
-
-        <!-- LANGUES -->
-        <div class="qualities__block">
-            <h3 class="qualities__title"><i class="uil uil-comment-dots"></i> Langues</h3>
-            <ul class="qualities__list">
-                <li>Français — Langue maternelle</li>
-                <li>Anglais — B2</li>
-                <li>Espagnol — B2</li>
-                <li>Portugais — C1</li>
-                <li>Lingala — C1</li>
-            </ul>
-        </div>
-
-        <!-- CENTRES D’INTÉRÊT -->
-        <div class="qualities__block">
-            <h3 class="qualities__title"><i class="uil uil-favorite"></i> Centres d’intérêt</h3>
-            <ul class="qualities__tags">
-                <li>Sport</li>
-                <li>Musique</li>
-                <li>Lecture</li>
-                <li>Voyages</li>
-                <li>Cinéma</li>
-                <li>Photographie</li>
-                <li>Technologies</li>
-                <li>Bénévolat</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-            <!--=================== SERVICES ===================-->
-            <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What i offer</span>
-
-                <div class="services__container container grid">
-                    <!--=================== SERVICE 1 ===================-->
-                    <div class="services__content">
-                        <div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--=================== CONTACT ME ===================-->
-            <section class="contact section" id="contact">
-    <h2 class="section__title">Contact ME</h2>
-    <span class="section__subtitle">Get in touch</span>
-
-    <div class="contact__container container contact__inline reveal">
-        <!-- Email -->
-        <div class="contact__information">
-            <i class="uil uil-envelope contact__icon"></i>
-            <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">kevintshib08@gmail.com</span>
-            </div>
-        </div>
-
-        <!-- Téléphone -->
-        <div class="contact__information">
-            <i class="uil uil-phone contact__icon"></i>
-            <div>
-                <h3 class="contact__title">Téléphone</h3>
-                <span class="contact__subtitle">+33 07 68 11 43 43</span>
-            </div>
-        </div>
-
-        <!-- Adresse -->
-        <div class="contact__information">
-            <i class="uil uil-map-marker contact__icon"></i>
-            <div>
-                <h3 class="contact__title">Adresse</h3>
-                <span class="contact__subtitle">Beauvais – FRANCE</span>
-            </div>
-        </div>
-
-        <div class="contact__information">
-    <i class="uil uil-linkedin contact__icon"></i>
-    <div>
-        <h3 class="contact__title">LinkedIn</h3>
-        <span class="contact__subtitle">
-            <a href="https://linkedin.com/in/kevin..." target="_blank">linkedin.com/in/kevin...</a>
-        </span>
-    </div>
-</div>
-    </div>
-</section>
-
-        </main>
-
-        <!--=================== FOOTER ===================-->
-         <footer class="footer">
-  <div class="footer__bg">
-    <div class="footer__container container grid">
-      <!-- Identité -->
-      <div>
-        <h1 class="footer__title">Kevin Tshibangu</h1>
-        <span class="footer__subtitle">Développeur Full Stack & Data Enthusiast</span>
-      </div>
-
-      <!-- Liens rapides -->
-      <ul class="footer__links">
-        <li><a href="#about" class="footer__link">À propos</a></li>
-        <li><a href="#skills" class="footer__link">Compétences</a></li>
-        <li><a href="#projects" class="footer__link">Projets</a></li>
-        <li><a href="./pdf/CV.pdf" class="footer__link" download>Télécharger mon CV</a></li>
-        <li><a href="mailto:kevintshib08@gmail.com" class="footer__link">Email</a></li>
-      </ul>
-
-      <!-- Réseaux sociaux -->
-      <div class="footer__socials">
-        <a href="https://linkedin.com/in/kevin..." target="_blank" class="footer__social" title="LinkedIn">
-          <i class="uil uil-linkedin"></i>
-        </a>
-        <a href="https://github.com/kevin..." target="_blank" class="footer__social" title="GitHub">
-          <i class="uil uil-github"></i>
-        </a>
-        <a href="mailto:kevintshib08@gmail.com" class="footer__social" title="Email">
-          <i class="uil uil-envelope-alt"></i>
-        </a>
-      </div>
-    </div>
-
-    <p class="footer__copy">
-      © 2025 Kevin Tshibangu <br>
-      Réalisé avec ❤️ — inspiré de <a href="https://github.com/bedimcode/portfolio-responsive-complete/blob/main/preview.png" target="_blank">Bedimcode</a>
-    </p>
-  </div>
-</footer>
+    </footer>
 
 
-            <!--=================== SCROLL TOP ===================-->
-            <a href="#" class="scrollup" id="scroll-up">
-                <i class="uil uil-arrow-up scrollup__icon"></i>
-            </a>
+    <!--=================== SCROLL TOP ===================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--=================== SECTIONS JS ===================-->
+
+    <script src="./js/loadSections.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/qualities.js"></script>
+    <script src="./js/projets.js"></script>
+
+    <!--=================== ANIMATION JS ===================-->
+    <script src="js/animations.js"></script>
 
 
-            <!--=================== ANIMATION JS ===================-->
-            <script src="js/animations.js"></script>
+    <!--=================== MAIN JS ===================-->
+    <script src="./js/main.js"></script>
+</body>
 
-
-            <!--=================== MAIN JS ===================-->
-            <script src="./js/main.js"></script>
-        </body>
-    </html>
+</html>
