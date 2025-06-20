@@ -2,14 +2,14 @@ function initMain() {
   /*==================== MENI SHOW Y HIDDEN ====================*/
   const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
-    
+
     navClose = document.getElementById('nav-close')
-    
-    
-    // === Active nav link on scroll ===
-    const sections = document.querySelectorAll('section[id]');
-    
-    function scrollActive() {
+
+
+  // === Active nav link on scroll ===
+  const sections = document.querySelectorAll('section[id]');
+
+  function scrollActive() {
     const sections = document.querySelectorAll('section[id]');
     const scrollY = window.scrollY;
 
@@ -109,14 +109,20 @@ function initMain() {
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Retirer tous les actifs
-      tabs.forEach(t => t.classList.remove('qualification__active'));
-      contents.forEach(c => c.classList.remove('qualification__active'));
-
-      // Activer le bon contenu
       const target = document.querySelector(tab.dataset.target);
+
+      contents.forEach(c => c.classList.remove('qualification__active'));
+      tabs.forEach(t => t.classList.remove('qualification__active'));
+
       tab.classList.add('qualification__active');
       target.classList.add('qualification__active');
+    });
+  });
+
+  // Clic pour faire tourner la carte (mobile)
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flip-clicked');
     });
   });
 

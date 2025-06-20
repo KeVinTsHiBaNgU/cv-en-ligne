@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'qualifications-section', url: './sections/qualifications.html' },
         { id: 'qualities-section', url: './sections/qualities.html' },
         { id: 'projets-section', url: './sections/projets.html' },
-        // { id: 'services-section', url: './sections/services.html' },
-        // { id: 'contact-section', url: './sections/contact.html' },
+        { id: 'realisations-section', url: './sections/realisations.html' },
+        { id: 'contact-section', url: './sections/contact.html' },
     ];
 
     Promise.all(
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initAnimations();
         initCarousel();
         initInterestAccordion();
+        initRealisationsAnimations();
     }).catch(err => {
         console.error('❌ Erreur de chargement des sections :', err);
     });
