@@ -19,25 +19,6 @@ if(navClose){
     })
 }
 
-/*========== MENU HIDDEN =============*/
-
-document.addEventListener('DOMContentLoaded', () => {
-    const target = document.getElementById('typewriter');
-    const text = "Hi, I'm Kevin";
-    let index = 0;
-
-    function typeWriter() {
-        if (index < text.length) {
-            target.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 200); // vitesse de frappe (100ms)
-        }
-    }
-
-    typeWriter();
-});
-
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -171,4 +152,5 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
 
