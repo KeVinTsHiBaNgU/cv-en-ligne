@@ -291,6 +291,10 @@ img {
     color: var(--first-color-alt);
 }
 
+.active-link {
+  color: var(--first-color);
+  font-weight: bold;
+}
 /* show menu */
 .show-menu {
     bottom: 0;

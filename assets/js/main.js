@@ -3,6 +3,31 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
+
+// === Active nav link on scroll ===
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+  const scrollY = window.scrollY;
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute('id');
+
+    const navLink = document.querySelector(`.nav__menu a[href="#${sectionId}"]`);
+    
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLink.classList.add('active-link');
+    } else {
+      navLink.classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);
+
+
 /*========== MENU SHOW Y HIDDEN =============*/
 /* Validate if constant exists */
 if(navToggle){
