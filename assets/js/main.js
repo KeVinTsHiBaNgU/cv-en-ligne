@@ -1,9 +1,8 @@
 function initMain() {
   /*==================== MENI SHOW Y HIDDEN ====================*/
-  const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-
-    navClose = document.getElementById('nav-close')
+  const navMenu = document.getElementById('nav-menu');
+  const navToggle = document.getElementById('nav-toggle');
+  const navClose = document.getElementById('nav-close');
 
 
   // === Active nav link on scroll ===
@@ -38,17 +37,25 @@ function initMain() {
 
   /*========== MENU SHOW Y HIDDEN =============*/
   /* Validate if constant exists */
+  // Afficher le menu
+  // Ouvre le menu quand on clique sur le burger
   if (navToggle) {
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.add('show-menu');
-    });
-  }
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+      });
+    }
 
-  if (navClose) {
-    navClose.addEventListener('click', () => {
-      navMenu.classList.remove('show-menu');
-    });
-  }
+    if (navClose) {
+      navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+      });
+    }
+
+    document.querySelectorAll('.nav__link').forEach(link =>
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+      })
+    );
 
   /*==================== REMOVE MENU MOBILE ====================*/
   const navLink = document.querySelectorAll('.nav__link')
@@ -147,7 +154,7 @@ function initMain() {
     if (this.scrollY >= 560) {
       scrollUp.classList.add('show-up');
     } else {
-      scrollUp.classList.remove('show-scroll');
+      scrollUp.classList.remove('show-up');
     }
   }
 

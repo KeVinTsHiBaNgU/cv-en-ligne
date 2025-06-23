@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sectionsToLoad = [
-        { id: 'home-section', url: '/sections/home.html' },
-        { id: 'about-section', url: '/sections/about.html' },
+        { id: 'home-section', url: './sections/home.html' },
+        { id: 'about-section', url: './sections/about.html' },
         { id: 'skills-section', url: './sections/skills.html' },
         { id: 'qualifications-section', url: './sections/qualifications.html' },
         { id: 'qualities-section', url: './sections/qualities.html' },
         { id: 'projets-section', url: './sections/projets.html' },
         { id: 'realisations-section', url: './sections/realisations.html' },
+        { id: 'actualites-section', url: './sections/news.html' },
         { id: 'contact-section', url: './sections/contact.html' },
     ];
 
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initCarousel();
         initInterestAccordion();
         initRealisationsAnimations();
+        initNews();
     }).catch(err => {
         console.error('❌ Erreur de chargement des sections :', err);
     });

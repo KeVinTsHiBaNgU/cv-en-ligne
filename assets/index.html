@@ -25,6 +25,13 @@
         <nav class="nav container">
             <a href="#home" class="nav__logo">Kevin</a>
 
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+            
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item"><a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Accueil</a></li>
@@ -37,12 +44,6 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
         </nav>
     </header>
 
@@ -56,6 +57,7 @@
         <div id="projets-section"></div>
         <div id="realisations-section"></div>
         <div id="qualities-section"></div>
+        <div id="actualites-section"></div>
         <div id="contact-section"></div> 
 
 
@@ -67,15 +69,13 @@
             <div class="footer__container container grid">
                 <!-- Identité -->
                 <div>
-                    <h1 class="footer__title">Kevin Tshibangu</h1>
+                    <h1 class="footer__title">Kevin</h1>
                     <span class="footer__subtitle">Développeur Full Stack & Data Enthusiast</span>
                 </div>
 
                 <!-- Liens rapides -->
                 <ul class="footer__links">
-                    <li><a href="#about" class="footer__link">Qui suis-je ?</a></li>
-                    <li><a href="#skills" class="footer__link">Compétences</a></li>
-                    <li><a href="#projects" class="footer__link">Projets</a></li>
+                    <li><a href="#news" class="footer__link">Actualités</a></li>
                     <li><a href="./pdf/CV.pdf" class="footer__link" download>Télécharger mon CV</a></li>
                     <li><a href="mailto:kevintshib08@gmail.com" class="footer__link">Email</a></li>
                 </ul>
@@ -116,9 +116,16 @@
     <script src="./js/qualities.js"></script>
     <script src="./js/projets.js"></script>
     <script src="./js/realisations.js"></script>
+    <script src="./js/news.js"></script>
 
     <!--=================== ANIMATION JS ===================-->
     <script src="js/animations.js"></script>
+
+    <script>
+  document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.toggle('show-menu');
+  });
+</script>
 
 
     <!--=================== MAIN JS ===================-->
