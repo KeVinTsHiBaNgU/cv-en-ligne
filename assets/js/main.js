@@ -40,22 +40,22 @@ function initMain() {
   // Afficher le menu
   // Ouvre le menu quand on clique sur le burger
   if (navToggle) {
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-      });
-    }
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.add('show-menu');
+    });
+  }
 
-    if (navClose) {
-      navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-      });
-    }
+  if (navClose) {
+    navClose.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu');
+    });
+  }
 
-    document.querySelectorAll('.nav__link').forEach(link =>
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-      })
-    );
+  document.querySelectorAll('.nav__link').forEach(link =>
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu');
+    })
+  );
 
   /*==================== REMOVE MENU MOBILE ====================*/
   const navLink = document.querySelectorAll('.nav__link')
@@ -190,9 +190,18 @@ function initMain() {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
   })
+  
+  const slider = document.getElementById("projectSlider");
 
-  console.log("Main JS initialisé");
+  slider.addEventListener("mouseenter", () => {
+    slider.style.animationPlayState = "paused";
+  });
+
+  slider.addEventListener("mouseleave", () => {
+    slider.style.animationPlayState = "running";
+  });
 }
+
 
 
 
