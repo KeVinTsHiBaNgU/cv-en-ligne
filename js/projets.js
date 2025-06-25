@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       github: "https://github.com/kevin/powerbi-dashboard",
       demo: "#"
     },
-    // Ajoute d'autres projets ici...
   ];
 
   const container = document.querySelector('.projects__container');

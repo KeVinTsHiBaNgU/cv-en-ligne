@@ -1476,70 +1476,6 @@ img {
 }
 
 /* ================= NEWS ================== */
-/* .news__container {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.news__card {
-  background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.news__card:hover {
-  transform: translateY(-5px);
-}
-
-.news__header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.news__avatar {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--first-color);
-}
-
-.news__author {
-  font-weight: 600;
-  color: var(--title-color);
-}
-
-.news__date {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-
-.news__content {
-  font-size: var(--normal-font-size);
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
-
-.news__footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.news__tag {
-  background-color: var(--first-color-light);
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  padding: 0.3rem 0.75rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-} */
-
 /* ================== SECTION NEWS ================== */
 
 .news {
@@ -1590,7 +1526,7 @@ img {
 /* ================== CARD ================== */
 
 .news__card {
-    flex: 0 0 300px;
+    flex: 0 0 500px;
     scroll-snap-align: center;
     background-color: var(--container-color);
     border-radius: 0.75rem;
