@@ -1308,7 +1308,7 @@ img {
 .projects__slider {
   display: flex;
   gap: 1.5rem;
-  animation: scrollProjects 20s linear infinite;
+  animation: scrollProjects 25s linear infinite;
   width: max-content;
   align-items: stretch;
 }
@@ -1382,7 +1382,7 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
